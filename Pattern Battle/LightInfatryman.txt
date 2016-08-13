@@ -1,0 +1,4 @@
+﻿Price: 
+HP: 10
+Attack: 3
+Defence: 1

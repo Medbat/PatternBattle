@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern Battle", "Pattern Battle\Pattern Battle.csproj", "{1FB7588F-83B2-4ECF-B79B-5867E507CAF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{8B59B296-989B-45F5-B2FF-F3192BBD2479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{1C01F24C-3EA4-4A8B-BE44-D858A32E11A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FB7588F-83B2-4ECF-B79B-5867E507CAF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB7588F-83B2-4ECF-B79B-5867E507CAF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB7588F-83B2-4ECF-B79B-5867E507CAF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB7588F-83B2-4ECF-B79B-5867E507CAF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B59B296-989B-45F5-B2FF-F3192BBD2479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B59B296-989B-45F5-B2FF-F3192BBD2479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B59B296-989B-45F5-B2FF-F3192BBD2479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B59B296-989B-45F5-B2FF-F3192BBD2479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C01F24C-3EA4-4A8B-BE44-D858A32E11A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C01F24C-3EA4-4A8B-BE44-D858A32E11A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C01F24C-3EA4-4A8B-BE44-D858A32E11A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C01F24C-3EA4-4A8B-BE44-D858A32E11A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://medbat.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Pattern\u0020Battle\\Pattern\u0020Battle.csproj
+		SccProjectName1 = Pattern\u0020Battle
+		SccLocalPath1 = Pattern\u0020Battle
+		SccProjectUniqueName2 = GUI\\GUI.csproj
+		SccProjectName2 = GUI
+		SccLocalPath2 = GUI
+		SccProjectUniqueName3 = UnitTests\\UnitTests.csproj
+		SccProjectName3 = UnitTests
+		SccLocalPath3 = UnitTests
+	EndGlobalSection
+EndGlobal

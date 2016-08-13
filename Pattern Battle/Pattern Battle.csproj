@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FB7588F-83B2-4ECF-B79B-5867E507CAF9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pattern_Battle</RootNamespace>
+    <AssemblyName>Pattern Battle</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractUnits\HeavyUnit.cs" />
+    <Compile Include="AbstractUnits\IUnit.cs" />
+    <Compile Include="AbstractUnits\LightUnit.cs" />
+    <Compile Include="AbstractUnits\Unit.cs" />
+    <Compile Include="Command\CommandType.cs" />
+    <Compile Include="Command\DamageCommand.cs" />
+    <Compile Include="Command\DamageCommandArgs.cs" />
+    <Compile Include="Command\EqiupKnightCommand.cs" />
+    <Compile Include="Command\EquipKnightCommandArgs.cs" />
+    <Compile Include="Command\FakeCommand.cs" />
+    <Compile Include="Command\ICommandable.cs" />
+    <Compile Include="Command\ICommandArgs.cs" />
+    <Compile Include="Command\Invoker.cs" />
+    <Compile Include="Command\KillCommand.cs" />
+    <Compile Include="Command\KillCommandArgs.cs" />
+    <Compile Include="Command\Reciever.cs" />
+    <Compile Include="Command\ResurrectCommand.cs" />
+    <Compile Include="Command\UnEquipKnightCommand.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="Factories\ArcherFactory.cs" />
+    <Compile Include="Factories\GulyayGorodFactory.cs" />
+    <Compile Include="Factories\HealerFactory.cs" />
+    <Compile Include="Factories\HeavyInfantrymanFactory.cs" />
+    <Compile Include="Factories\IFactory.cs" />
+    <Compile Include="Factories\KnightFactory.cs" />
+    <Compile Include="Factories\LightInfantrymanFactory.cs" />
+    <Compile Include="Factories\WizardFactory.cs" />
+    <Compile Include="Observer\EventType.cs" />
+    <Compile Include="Observer\FightLogger.cs" />
+    <Compile Include="Observer\IObservable.cs" />
+    <Compile Include="Observer\IObserver.cs" />
+    <Compile Include="Observer\DeathLogger.cs" />
+    <Compile Include="Observer\SpecialActionLogger.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="SpecialActions\ICanBeDressed.cs" />
+    <Compile Include="SpecialActions\ICanBeHealed.cs" />
+    <Compile Include="SpecialActions\IClonable.cs" />
+    <Compile Include="SpecialActions\ISpecialAction.cs" />
+    <Compile Include="SpecialActions\ISquire.cs" />
+    <Compile Include="Strategies\IStrategy.cs" />
+    <Compile Include="Strategies\MaxLinesStrategy.cs" />
+    <Compile Include="Strategies\OneLineStrategy.cs" />
+    <Compile Include="Strategies\ThreeLinesStrategy.cs" />
+    <Compile Include="Units\Archer.cs" />
+    <Compile Include="Units\GulyayGorod.cs" />
+    <Compile Include="Units\Healer.cs" />
+    <Compile Include="Units\HeavyInfantryman.cs" />
+    <Compile Include="Units\Knight.cs" />
+    <Compile Include="Units\KnightDecorator\KnightAmmunition.cs" />
+    <Compile Include="Units\KnightDecorator\KnightAmmunitionEnum.cs" />
+    <Compile Include="Units\KnightDecorator\KnightArmor.cs" />
+    <Compile Include="Units\KnightDecorator\KnightHelmet.cs" />
+    <Compile Include="Units\KnightDecorator\KnightHorse.cs" />
+    <Compile Include="Units\KnightDecorator\KnightNothing.cs" />
+    <Compile Include="Units\KnightDecorator\KnightShield.cs" />
+    <Compile Include="Units\KnightDecorator\KnightSpear.cs" />
+    <Compile Include="Units\LightInfantryman.cs" />
+    <Compile Include="Units\UnitComparer.cs" />
+    <Compile Include="Units\Wizard.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GulyayGorod, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\GulyayGorod.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GulyayGorod.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
